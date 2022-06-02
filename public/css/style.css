@@ -1,0 +1,119 @@
+@font-face{
+  font-family: 'Ubuntu';
+  src : url('/font/Ubuntu.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: 'Ubuntu';
+}
+
+nav{
+  width: 100vw;
+  height: 80px;
+  background-color: #2fa0f6;
+  display: flex;
+  align-items: center;
+  padding: 0px 50px;
+  justify-content: space-between;
+}
+a{
+  text-decoration: none;
+  color: #fff;
+}
+nav .logo{
+  font-size: 30px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  color: #fff;
+}
+nav .menu-btn{
+  display: none;
+  cursor: pointer;
+}
+nav .nav-items{
+  transition: left 200ms ease;
+}
+nav .nav-items li{
+  display: inline-block;
+  list-style: none;
+  padding: 8px 20px;
+  font-size: 20px;
+}
+nav .show{
+  left: 0%;
+  background: blue;
+}
+section .formBox{
+  width: 80%;
+  margin: 50px auto;
+  text-align: center;
+  padding: 5px 4px;
+}
+section .formBox input{
+  padding: 5px 8px;
+  border: 1px solid #2fa0f6;
+  outline: none;
+  margin: 5px 0px;
+}
+section .formBox button{
+  padding: 5px 8px;
+  background-color: #2fa0f6;
+  border: none;
+  color: #fff;
+  margin: 5px 0px;
+  border-radius: 2px;
+  cursor: pointer;
+}
+.some-info h4{
+  margin: 0 60px;
+  font-size: 10px;
+}
+.content{
+  padding: 50px;
+}
+.content p{
+  text-align: justify;
+  font-size: 8px;
+}
+@media screen and (max-width: 900px ) {
+  nav {
+    height: 60px;
+    padding: 0px 20px;
+  }
+  nav .logo{
+    font-size: 22px;
+  }
+  nav .menu-btn{
+    display: block;
+  }
+  nav .nav-items{
+    width: 50%;
+    height: 100%;
+    position: fixed;
+    top: 60px;
+    left: -50%;
+    bottom: 0%;
+    background: #2fa0f6;
+    padding: 10px 0px;
+  }
+  nav .nav-items li{
+    display: block;
+    text-align: center;
+    margin: 15px 0px;
+    font-size: 16px;
+  }
+  .content{
+    padding: 20px;
+  }
+  .content p{
+    font-size: 12px;
+  }
+  .some-info h4{
+    margin: 0px 20px;
+    font-size: 16px;
+  }
+}
